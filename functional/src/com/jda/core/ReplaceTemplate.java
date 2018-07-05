@@ -1,11 +1,10 @@
 package com.jda.core;
-import com.jda.utility.*;
+
+import com.jda.utility.FunctionalUtility;
 
 public class ReplaceTemplate {
-	public static void main(String args[])
-	{
-		FunctionalUtility utility = new FunctionalUtility();
-		String inputString = utility.getString();
+	public static void main(String args[]) {
+		String inputString = FunctionalUtility.getString();
 		String sentence = "Hello <<Username>>, How are you?";
 		sentence = sentence.replaceFirst("\\<<(.*?)\\>>", inputString);
 		System.out.println(sentence);

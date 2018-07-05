@@ -29,7 +29,7 @@ public class Gambler {
 				randomInteger = r.nextFloat();
 				if (randomInteger<0.5)
 				{
-					fair= -1;
+					fair=-1;
 				}
 				else
 				{
