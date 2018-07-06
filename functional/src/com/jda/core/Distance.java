@@ -4,6 +4,7 @@ import com.jda.utility.FunctionalUtility;
 
 public class Distance {
 	public static void main(String args[]) {
+		System.out.println(args[0] + args[1]);
 		System.out.println("Enter x coordinate : ");
 		double x = FunctionalUtility.getDouble();
 		System.out.println("Enter y coordinate : ");
