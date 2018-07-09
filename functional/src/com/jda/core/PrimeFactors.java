@@ -17,8 +17,7 @@ public class PrimeFactors {
 	}
 	public static void main (String args[])
 	{
-		FunctionalUtility utility = new FunctionalUtility();
-		int n = utility.getInt();
+		int n = FunctionalUtility.getInt();
 		ArrayList<Integer> primeFactors = new ArrayList<Integer>();
 		for (int i=1;i*i<=n; i++)
 		{

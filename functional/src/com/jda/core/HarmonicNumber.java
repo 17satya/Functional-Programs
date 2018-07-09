@@ -4,8 +4,7 @@ import com.jda.utility.*;
 public class HarmonicNumber {
 	public static void main(String args[])
 	{
-		FunctionalUtility utility = new FunctionalUtility();
-		int n = utility.getInt();
+		int n = FunctionalUtility.getInt();
 		float sum = 0;
 		for (float i=1; i<=n; i++)
 		{

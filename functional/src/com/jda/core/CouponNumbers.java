@@ -1,3 +1,11 @@
+/***********************************************************************************************************
+ * 
+ * Purpose : Determines the number of times random function is called to generate given number of distinct coupon numbers 
+ * 
+ * @author Apoorva Mishra
+ *
+ *************************************************************************************************************/
+
 package com.jda.core;
 
 import java.util.ArrayList;
@@ -8,13 +16,16 @@ import com.jda.utility.FunctionalUtility;
 
 public class CouponNumbers 
 {
+	/**
+	 * Function to print the number of times random function was called to get a given number of distinct coupon numbers
+	 */
 	public static void main(String args[]) 
 	{
 		System.out.println("Enter the number of coupons to be generated :");
 		int n = FunctionalUtility.getInt();
 		int couponGenerated;
 		int count = 0;
-		Random rand = new Random();
+		Random rand = FunctionalUtility.randomCreate();
 		
 		List<Integer> coupons = new ArrayList<>();
 		while (coupons.size() < n) {
@@ -32,9 +43,6 @@ public class CouponNumbers
 			}
 		}
 		System.out.println("The coupons are: \n  "+ coupons);
-		/*for (int coupon : coupons) {
-			System.out.println(coupon);
-		}*/
 		System.out.println("The number of times tried :" + count);
 	}
 }

@@ -1,14 +1,17 @@
+/*************************************************************************************************
+ * Purpose : Determines the distance between between a point (x,y) to origin
+ **************************************************************************************************/
 package com.jda.core;
 
-import com.jda.utility.FunctionalUtility;
-
 public class Distance {
+	/**
+	 * Function to calculate and print the distance between a point and origin
+	 * 
+	 * @param args - x and y coordinates
+	 */
 	public static void main(String args[]) {
-		System.out.println(args[0] + args[1]);
-		System.out.println("Enter x coordinate : ");
-		double x = FunctionalUtility.getDouble();
-		System.out.println("Enter y coordinate : ");
-		double y = FunctionalUtility.getDouble();
+		double x= Double.parseDouble(args[0]);
+		double y = Double.parseDouble(args[1]);
 		double distance;
 		x = Math.pow(x, 2);
 		y = Math.pow(y, 2);

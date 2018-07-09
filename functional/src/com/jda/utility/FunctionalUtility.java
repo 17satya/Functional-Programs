@@ -1,5 +1,6 @@
 package com.jda.utility;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class FunctionalUtility {
@@ -71,5 +72,11 @@ public class FunctionalUtility {
 			array[i] = input.nextInt();
 		}
 		return array;
+	}
+	
+	public static Random randomCreate ()
+	{
+		Random rand = new Random();
+		return rand;
 	}
 }

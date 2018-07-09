@@ -4,12 +4,11 @@ import com.jda.utility.*;
 public class LeapYear {
 	public static void main(String args[])
 	{
-		FunctionalUtility utility = new FunctionalUtility();
-		int year = utility.getInt();
+		int year = FunctionalUtility.getInt();
 		while (year<1000 || year>9999)
 		{
 			System.out.println("Error! The integer is not a 4-digit number.");
-			year = utility.getInt();
+			year = FunctionalUtility.getInt();
 		}
 		if ((year%4==0 && year%100!=0)||year%400==0)
 		{

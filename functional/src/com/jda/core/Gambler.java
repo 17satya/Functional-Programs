@@ -6,14 +6,13 @@ import com.jda.utility.*;
 public class Gambler {
 	public static void main(String args[])
 	{
-		FunctionalUtility utility = new FunctionalUtility();
 		System.out.println("Enter the number of times he/she wants to play :");
-		int n = utility.getInt();
+		int n = FunctionalUtility.getInt();
 		System.out.println("Enter the goal:");
-		int goal = utility.getInt();
+		int goal = FunctionalUtility.getInt();
 		Float randomInteger;
 		System.out.println("Enter the base money:");
-		int base = utility.getInt();
+		int base = FunctionalUtility.getInt();
 		int base2 = base;
 		int fair;
 		int win =0;

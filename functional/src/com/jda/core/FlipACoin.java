@@ -1,13 +1,20 @@
+/****************************************************************************************
+ * Purpose: Determines the probability of heads and probability of  tails on flipping a coin
+ ****************************************************************************************/
+
 package com.jda.core;
 import java.util.Random;
 
 import com.jda.utility.*;
 
 public class FlipACoin {
+	/**
+	 * Function determines the probability of heads and probability of tails on flipping a coin n times
+	 * 
+	 */
 	public static void main(String args[])
 	{
-		FunctionalUtility utility = new FunctionalUtility();
-		int n = utility.getInt();
+		int n = FunctionalUtility.getInt();
 		Random rand = new Random();
 		float randomInteger;
 		float tails =0, heads=0;
